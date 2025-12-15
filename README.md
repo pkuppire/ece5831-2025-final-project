@@ -62,8 +62,9 @@ ECE5831-2025-FINAL-PROJECT/
 ├── make_report_figures.py
 ├── final_project.ipynb
 └── README.md
-
+```
 ---
+
 
 ## Dataset Setup
 
@@ -72,21 +73,6 @@ Each split contains three class subfolders:
 Healthy/
 Powdery/
 Rust/
-
----
-
-## How the Project Is Designed
-
-- All model logic is implemented as **separate Python files** inside `src/`
-- Each model saves its results automatically inside a corresponding folder in `models/`
-- The **final_project.ipynb** notebook:
-  - Loads data
-  - Imports model classes
-  - Trains or loads models
-  - Plots training curves
-  - Evaluates on the test set
-
-This design keeps the notebook **clean and readable**, while all heavy logic stays in reusable Python files.
 
 ---
 
@@ -145,3 +131,16 @@ This will load existing trained models from the models/ directory instead of ret
 
 
 ## Links
+
+Link for Presentation video: 
+
+Link for demo video : 
+
+Link for presentation slides: https://docs.google.com/presentation/d/13eUgs199TmuqNG16QlGHWP5xdWCfiAi7/edit?usp=sharing&ouid=112501891501364681430&rtpof=true&sd=true
+
+Link for Report: https://drive.google.com/file/d/1_KV-loHZH0JRQrcLFhqZDe54Ij9Kcu--/view?usp=sharing
+
+Link fot Dataset:  https://drive.google.com/drive/folders/1wtTPqgwsdYKPq6yu4rqwR5OY0UdZym8X?usp=sharing
+
+Link for Kaggle Dataset: https://www.kaggle.com/datasets/rashikrahmanpritom/plant-disease-recognition-dataset
+
