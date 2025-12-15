@@ -5,9 +5,9 @@ This project implements CNN-based models to classify plant leaf images into thre
 The project is designed with a **clear, modular structure**, and all experiments can be reproduced from a **final notebook**.
 
 ---
-
 ## Project Structure
 
+```text
 ECE5831-2025-FINAL-PROJECT/
 ├── data/
 │   └── plant-disease-recognition-dataset/
@@ -47,8 +47,8 @@ ECE5831-2025-FINAL-PROJECT/
 │   └── cm_compare.png
 │
 ├── src/
-│   ├── data_eda.py                  # Dataset loading & preprocessing
-│   ├── utils.py                     # Common helper functions
+│   ├── data_eda.py
+│   ├── utils.py
 │   ├── baseline_cnn.py
 │   ├── improved_cnn_128.py
 │   ├── improved_cnn_224.py
@@ -59,8 +59,8 @@ ECE5831-2025-FINAL-PROJECT/
 │   ├── pretrained_efficientnet_b0.py
 │   └── pretrained_efficientnet_b0_finetune.py
 │
-├── report_figures.py            
-├── final_project.ipynb               # Main notebook to run all experiments
+├── make_report_figures.py
+├── final_project.ipynb
 └── README.md
 
 ---
