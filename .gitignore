@@ -1,0 +1,14 @@
+# ===== ignore trained models / checkpoints =====
+models/
+*.keras
+*.h5
+*.ckpt
+*.weights.h5
+
+# ===== python cache =====
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# ===== optional: logs/artifacts =====
+*.log
