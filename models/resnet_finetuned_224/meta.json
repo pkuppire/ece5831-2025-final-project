@@ -1,0 +1,22 @@
+{
+  "experiment_name": "resnet_finetuned_224",
+  "img_size": [
+    224,
+    224
+  ],
+  "batch_size": 32,
+  "class_names": [
+    "Healthy",
+    "Powdery",
+    "Rust"
+  ],
+  "epochs_stage1": 15,
+  "epochs_stage2": 15,
+  "lr_stage1": 0.001,
+  "lr_stage2": 0.0001,
+  "backbone": "ResNet50(ImageNet)",
+  "fine_tuning": true,
+  "trainable_from": 140,
+  "keep_batchnorm_frozen": true,
+  "checkpoint_monitor": "val_loss"
+}

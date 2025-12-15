@@ -1,0 +1,17 @@
+{
+  "experiment_name": "improved_cnn_ref",
+  "img_size": [
+    128,
+    128
+  ],
+  "batch_size": 32,
+  "class_names": [
+    "Healthy",
+    "Powdery",
+    "Rust"
+  ],
+  "epochs": 50,
+  "lr": 0.001,
+  "model_filename": "improved_cnn_ref.keras",
+  "arch": "Conv32/64/128/256 + BN + MaxPool + Flatten + Dense256 + Dropout0.5 + Softmax"
+}

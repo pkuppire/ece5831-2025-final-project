@@ -9,48 +9,59 @@ The project is designed with a **clear, modular structure**, and all experiments
 ## Project Structure
 
 ECE5831-2025-FINAL-PROJECT/
-│
 ├── data/
-│ └── plant-disease-recognition-dataset/
-│ ├── Train/Train/
-│ ├── Validation/Validation/
-│ └── Test/Test/
-│ ├── Healthy/
-│ ├── Powdery/
-│ └── Rust/
+│   └── plant-disease-recognition-dataset/
+│       ├── Train/
+│       │   ├── Healthy/
+│       │   ├── Powdery/
+│       │   └── Rust/
+│       ├── Validation/
+│       │   ├── Healthy/
+│       │   ├── Powdery/
+│       │   └── Rust/
+│       └── Test/
+│           ├── Healthy/
+│           ├── Powdery/
+│           └── Rust/
 │
 ├── models/
-│ ├── baseline_cnn_128/
-│ ├── baseline_cnn_224/
-│ ├── improved_cnn_128/
-│ ├── improved_cnn_224/
-│ ├── efficientnetb0_tl_224/
-│ ├── efficientnetb0_ft_light_224/
-│ ├── resnet_pretrained_224/
-│ ├── vgg_pretrained_224/
-│ └── vgg_finetuned_224/
-│ ├── *.keras # Saved trained model
-│ ├── history.json # Training history
-│ ├── meta.json # Experiment configuration
-│ ├── test_metrics.json # Final test results
-│ └── training_curves.png # Accuracy & loss plots (for all the models)
+│   ├── baseline_cnn_128/
+│   ├── baseline_cnn_224/
+│   ├── improved_cnn_128/
+│   ├── improved_cnn_224/
+│   ├── efficientnetb0_tl_224/
+│   ├── efficientnetb0_ft_light_224/
+│   ├── resnet_pretrained_224/
+│   ├── vgg_pretrained_224/
+│   ├── vgg_finetuned_224/
+│   ├── *.keras              # Saved trained models (ignored in git)
+│   ├── history.json         # Training history
+│   ├── meta.json            # Experiment configuration
+│   ├── test_metrics.json    # Final test results
+│   └── training_curves.png  # Accuracy & loss plots
+│
+├── figures/
+│   ├── cnn_curves.png
+│   ├── tl_frozen_curves.png
+│   ├── tl_finetuned_curves.png
+│   └── cm_compare.png
 │
 ├── src/
-│ ├── data_eda.py # Dataset loading & preprocessing
-│ ├── utils.py # Common helper functions
-│ ├── baseline_cnn.py
-│ ├── improved_cnn_128.py
-│ ├── improved_cnn_224.py
-│ ├── pretrained_efficientnet_b0.py
-│ ├── pretrained_efficientnet_b0_finetune.py
-│ ├── pretrained_resnet50.py
-│ ├── pretrained_resnet50_finetune.py
-│ ├── pretrained_vgg16.py
-│ └── pretrained_vgg16_finetune.py
+│   ├── data_eda.py                  # Dataset loading & preprocessing
+│   ├── utils.py                     # Common helper functions
+│   ├── baseline_cnn.py
+│   ├── improved_cnn_128.py
+│   ├── improved_cnn_224.py
+│   ├── pretrained_vgg16.py
+│   ├── pretrained_vgg16_finetune.py
+│   ├── pretrained_resnet50.py
+│   ├── pretrained_resnet50_finetune.py
+│   ├── pretrained_efficientnet_b0.py
+│   └── pretrained_efficientnet_b0_finetune.py
 │
-├── final_project.ipynb # Main notebook to run all experiments
+├── report_figures.py            
+├── final_project.ipynb               # Main notebook to run all experiments
 └── README.md
-
 
 ---
 

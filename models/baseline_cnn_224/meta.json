@@ -1,0 +1,33 @@
+{
+  "experiment_name": "baseline_cnn_224",
+  "img_size": [
+    224,
+    224
+  ],
+  "batch_size": 32,
+  "class_names": [
+    "Healthy",
+    "Powdery",
+    "Rust"
+  ],
+  "epochs": 20,
+  "lr": 0.001,
+  "model_filename": "baseline_cnn_224.keras",
+  "callbacks": {
+    "ModelCheckpoint": {
+      "monitor": "val_accuracy",
+      "save_best_only": true
+    },
+    "EarlyStopping": {
+      "monitor": "val_loss",
+      "patience": 5,
+      "restore_best_weights": true
+    },
+    "ReduceLROnPlateau": {
+      "monitor": "val_loss",
+      "factor": 0.5,
+      "patience": 2,
+      "min_lr": 1e-06
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "experiment_name": "efficientnetb0_tl_224",
+  "img_size": [
+    224,
+    224
+  ],
+  "batch_size": 32,
+  "class_names": [
+    "Healthy",
+    "Powdery",
+    "Rust"
+  ],
+  "epochs": 15,
+  "lr": 0.001,
+  "model_filename": "efficientnetb0_tl_224.keras",
+  "backbone": "EfficientNetB0(ImageNet, frozen)",
+  "fine_tuning": false,
+  "checkpoint_monitor": "val_loss"
+}

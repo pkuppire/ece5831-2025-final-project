@@ -1,14 +1,12 @@
-# ===== ignore trained models / checkpoints =====
-models/
-*.keras
-*.h5
-*.ckpt
-*.weights.h5
+# ignore only saved model binaries (keep plots/metrics)
+models/**/*.keras
+models/**/*.h5
+models/**/*.ckpt
+models/**/saved_model/
+models/**/variables/
+models/**/assets/
 
-# ===== python cache =====
-__pycache__/
-*.pyc
+# usual python junk
+**/__pycache__/
+**/*.pyc
 .ipynb_checkpoints/
-
-# ===== optional: logs/artifacts =====
-*.log

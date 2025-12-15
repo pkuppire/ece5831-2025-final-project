@@ -1,0 +1,20 @@
+{
+  "experiment_name": "efficientnetb0_ft_224_last20_lr1e5",
+  "base_experiment_name": "efficientnetb0_tl_224",
+  "img_size": [
+    224,
+    224
+  ],
+  "batch_size": 32,
+  "class_names": [
+    "Healthy",
+    "Powdery",
+    "Rust"
+  ],
+  "epochs": 10,
+  "lr": 1e-05,
+  "unfreeze_last_n": 20,
+  "keep_batchnorm_frozen": true,
+  "fine_tuning": true,
+  "checkpoint_monitor": "val_loss"
+}

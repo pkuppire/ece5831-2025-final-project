@@ -1,0 +1,21 @@
+{
+  "experiment_name": "vgg_finetuned_224",
+  "img_size": [
+    224,
+    224
+  ],
+  "batch_size": 32,
+  "class_names": [
+    "Healthy",
+    "Powdery",
+    "Rust"
+  ],
+  "epochs_stage1": 10,
+  "epochs_stage2": 8,
+  "lr_stage1": 0.001,
+  "lr_stage2": 0.0001,
+  "backbone": "VGG16(ImageNet)",
+  "fine_tuning": true,
+  "trainable_from": 11,
+  "checkpoint_monitor": "val_loss"
+}
