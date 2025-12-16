@@ -132,9 +132,9 @@ This will load existing trained models from the models/ directory instead of ret
 
 ## Links
 
-Link for Presentation video: 
+Link for Presentation video: https://youtu.be/detW35HMX7s?si=_GTa5HPkzxCJ6twL 
 
-Link for demo video : 
+Link for demo video : https://youtu.be/7m3CUkdC2Ek?si=DqfEirCRlp4Pnzuj 
 
 Link for presentation slides: https://docs.google.com/presentation/d/13eUgs199TmuqNG16QlGHWP5xdWCfiAi7/edit?usp=sharing&ouid=112501891501364681430&rtpof=true&sd=true
 
